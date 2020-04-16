@@ -9,8 +9,4 @@ config:
                     remote: https://github.com/DavidGuimaraes/serasa-config-repo
             uri: http://localhost:${config.server.port}
 
-discovery:
-  app:
-    name: ms-discovery
-  server:
-    port: 8081
+discovery.app.name: ms-discovery
