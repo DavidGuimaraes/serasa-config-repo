@@ -1,7 +1,6 @@
 config:
       app:
           name: ms-config
-      name: ms-config
       server:
             port: 8888
             git:
@@ -10,4 +9,6 @@ config:
                     remote: https://github.com/DavidGuimaraes/serasa-config-repo
             uri: http://localhost:${config.server.port}
 
-name: ms-discovery
+spring.application.name: ${config.app.name}
+server.port: ${config.server.port}
+spring.cloud.config.server.git.uri: ${config.server.git.uri.remote}

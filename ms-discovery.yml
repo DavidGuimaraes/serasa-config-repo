@@ -1,0 +1,11 @@
+discovery:
+        app:
+            name: ms-discovery
+        server:
+              port: 8081
+
+spring.cloud.config.uri: ${config.server.uri}
+spring.application.name: ${discovery.app.name}
+server.port: ${discovery.server.port}
+eureka.client.register-with-eureka: false
+eureka.client.fetch-registry: false
