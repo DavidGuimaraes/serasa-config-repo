@@ -1,0 +1,5 @@
+discovery:
+  app:
+    name: ms-discovery
+  server:
+    port: 8081
