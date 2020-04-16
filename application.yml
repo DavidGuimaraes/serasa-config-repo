@@ -10,7 +10,7 @@ config:
             uri: http://localhost:${config.server.port}
 
 discovery:
-          app:
-              name: ms-discovery
-          server:
-                port: 8081
+  app:
+    name: ms-discovery
+  server:
+    port: 8081
