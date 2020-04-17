@@ -1,0 +1,16 @@
+gateway:
+      server:
+            port: 8099
+
+server.port: ${gateway.server.port}
+
+zuul:
+  routes:
+    index:
+      sensitiveHeaders:
+      path: /config/**
+      url: http://127.0.0.1:8888/
+    bridgekc:
+      sensitiveHeaders:
+      path: /discovery/**
+      url: http://127.0.0.1:8081/
