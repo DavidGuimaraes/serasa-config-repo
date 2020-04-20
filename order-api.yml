@@ -7,7 +7,8 @@ server.port: ${order.server.port}
 spring:
   data:
     mongodb:
-      host: mongo #localhost
+      # host: mongo
+      host: localhost
       port: 27017
       database: order
       repositories:
