@@ -1,0 +1,20 @@
+request:
+  order:
+    server:
+      port: 8083
+
+server.port: ${request.order.server.port}
+
+spring:
+  rabbitmq:
+    username: rabbit666
+    password: melhorsenhadomundo
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: compra
+          group: buyprocess
+
+fila.entrada: queue-order-waiting
+fila.finalizado: queue-order-done
