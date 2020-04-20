@@ -1,0 +1,14 @@
+order:
+  server:
+    port: 8084
+
+server.port: ${order.server.port}
+
+spring:
+  data:
+    mongodb:
+      host: mongo #localhost
+      port: 27017
+      database: order
+      repositories:
+        enabled: true
