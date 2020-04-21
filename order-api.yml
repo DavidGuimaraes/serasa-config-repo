@@ -7,8 +7,8 @@ server.port: ${order.server.port}
 spring:
   data:
     mongodb:
-      # host: mongo
-      host: localhost
+      host: mongo
+      # host: localhost
       port: 27017
       database: order
       repositories:
@@ -19,8 +19,8 @@ spring:
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
-    # host: rabbitmq
-    host: localhost
+    host: rabbitmq
+    # host: localhost
   cloud:
     stream:
       bindings:
