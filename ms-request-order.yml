@@ -9,7 +9,8 @@ spring:
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
-    host: rabbitmq
+    # host: rabbitmq
+    host: localhost
   cloud:
     stream:
       bindings:
