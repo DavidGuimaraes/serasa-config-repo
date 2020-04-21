@@ -13,6 +13,9 @@ spring:
       database: order
       repositories:
         enabled: true
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
