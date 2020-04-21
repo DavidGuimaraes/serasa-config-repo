@@ -13,6 +13,17 @@ spring:
       database: order
       repositories:
         enabled: true
+  rabbitmq:
+    username: rabbit666
+    password: melhorsenhadomundo
+    # host: rabbitmq
+    host: localhost
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: compra
+          group: buyprocess
 
 fila.entrada: queue-order-waiting
 fila.finalizado: queue-order-done
