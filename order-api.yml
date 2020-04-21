@@ -13,3 +13,6 @@ spring:
       database: order
       repositories:
         enabled: true
+
+fila.entrada: queue-order-waiting
+fila.finalizado: queue-order-done
