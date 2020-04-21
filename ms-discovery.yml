@@ -2,7 +2,7 @@ discovery:
         app:
             name: ms-discovery
         server:
-              port: 8081
+              port: 8761
 
 server.port: ${discovery.server.port}
 eureka.client.register-with-eureka: false
