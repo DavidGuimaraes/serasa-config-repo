@@ -6,13 +6,23 @@ server.port: ${gateway.server.port}
 
 zuul:
   routes:
-    index:
-      sensitiveHeaders:
+    config:
       path: /config/**
       # url: http://127.0.0.1:8888/
       url: http://ms-config:8888/
-    bridgekc:
-      sensitiveHeaders:
+    discovery:
       path: /discovery/**
-      # url: http://127.0.0.1:8081/
-      url: http://ms-discovery:8081/
+      # url: http://127.0.0.1:8761/
+      url: http://ms-discovery:8761/
+    userapi:
+      path: /user-api/**
+      # url: http://127.0.0.1:8082/
+      url: http://user-api:8082/
+    requestorder:
+      path: /request-order/**
+      # url: http://127.0.0.1:8083/
+      url: http://ms-request-order:8083/
+    orderapi:
+      path: /order-api/**
+      # url: http://127.0.0.1:8084/
+      url: http://order-api:8084/
