@@ -16,3 +16,9 @@ spring:
   main:
     allow-bean-definition-overriding: true
   jackson.deserialization.fail-on-unknown-properties: true
+
+eureka:
+  client:
+    serviceUrl:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://ms-discovery:8761/eureka

@@ -18,5 +18,11 @@ spring:
           destination: compra
           group: buyprocess
 
+eureka:
+  client:
+    serviceUrl:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://ms-discovery:8761/eureka
+
 fila.entrada: queue-order-waiting
 fila.finalizado: queue-order-done
