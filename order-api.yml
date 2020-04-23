@@ -18,10 +18,17 @@ spring:
     password: melhorsenhadomundo
     # host: rabbitmq
     host: localhost
+  cache:
+    type: redis
   redis:
     host: localhost
     # host: redis
     port: 6379
+  cache:
+    redis:
+      cache-null-values: false
+      time-to-live: 600000
+      use-key-prefix: true
   cloud:
     stream:
       bindings:
