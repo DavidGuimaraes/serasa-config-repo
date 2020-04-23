@@ -7,8 +7,8 @@ server.port: ${order.server.port}
 spring:
   data:
     mongodb:
-      # host: mongo
-      host: localhost
+      host: mongo
+      # host: localhost
       port: 27017
       database: order
       repositories:
@@ -16,8 +16,8 @@ spring:
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
-    # host: rabbitmq
-    host: localhost
+    host: rabbitmq
+    # host: localhost
   cache:
     type: redis
     redis:
@@ -25,8 +25,8 @@ spring:
       time-to-live: 600000
       use-key-prefix: true
   redis:
-    host: localhost
-    # host: redis
+    # host: localhost
+    host: redis
     port: 6379
     
   cloud:
@@ -46,8 +46,8 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-      # defaultZone: http://ms-discovery:8761/eureka
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://ms-discovery:8761/eureka
 
 fila.entrada: queue-order-waiting
 fila.finalizado: queue-order-done
