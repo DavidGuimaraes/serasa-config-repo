@@ -24,5 +24,5 @@ eureka:
       defaultZone: http://ms-discovery:8761/eureka
 
 elasticsearch.index: user
-# elasticsearch.base.address: http://localhost:9200/${elasticsearch.index}
-elasticsearch.base.address: http://elasticsearch:9200/${elasticsearch.index}
+elasticsearch.base.address: http://localhost:9200/${elasticsearch.index}
+# elasticsearch.base.address: http://elasticsearch:9200/${elasticsearch.index}
